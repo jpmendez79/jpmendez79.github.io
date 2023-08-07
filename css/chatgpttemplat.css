@@ -1,0 +1,81 @@
+/* Define your color variables here */
+:root {
+  --primary-color: #5465ffff;
+  --secondary-color: ##bf0603ff;
+  --background-color: #f8f8ff;
+  --text-color: #343f3eff;
+}
+
+/* Global styles */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.5;
+  display: grid;
+  grid-template-columns: 1fr min(45rem, 90%) 1fr;
+  margin: 0;
+
+}
+
+/* Align the body in a row */
+body > * {
+  grid-column: 2;
+}
+
+
+body > header {
+    text-align: center;
+    padding: 0 0.5rem 2rem 0.5rem;
+    grid-column: 1 / -1;
+
+}
+
+body > header h1 {
+  max-width: 1200px;
+  margin: 1rem auto;
+}
+
+body > header p {
+  max-width: 40rem;
+  margin: 1rem auto;
+}
+
+
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+/* Navbar styles (adjust as needed) */
+.navbar {
+  background-color: #ffff/* var(--primary-color) */;
+  color: var(--secondary-color);
+  padding: 10px;
+}
+
+.navbar a {
+  color: #bf0603ff/* var(--text-color) */;
+  margin-right: 10px;
+}
+
+.navbar a:hover {
+  color: var(--secondary-color);
+}
+
+/* Your custom styles here */
+
+body > footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem 1.5rem 1rem;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
